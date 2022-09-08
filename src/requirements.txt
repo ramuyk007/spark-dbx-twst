@@ -1,0 +1,6 @@
+-r requirements_dev.txt
+pyspark
+pytest-cov
+pytest
+python-decouple
+twine

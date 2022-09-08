@@ -1,0 +1,10 @@
+<package>
+  <metadata>
+    <id>Honeywell.offeringname.pipelinename.deploy</id>
+    <version>$version$</version>
+    <authors>[email]</authors>
+    <owners>[email]</owners>
+    <description>Databricks deployment scripts</description>
+    <tags>Databricks Deploy</tags>
+  </metadata>
+</package>

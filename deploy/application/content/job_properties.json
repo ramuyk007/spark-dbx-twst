@@ -1,0 +1,35 @@
+{
+	"default": {
+		"strict_path_adjustment_policy": true,
+		"jobs": [
+			{
+				"name": "pipelinename",
+				"new_cluster": {
+					"spark_version": "7.3.x-scala2.12",
+					"node_type_id": "Standard_DS4_v2",
+					"enable_elastic_disk": true,
+					"azure_attributes": {
+						"first_on_demand": 1,
+						"availability": "ON_DEMAND_AZURE",
+						"spot_bid_max_price": -1
+					},
+					"runtime_engine": "STANDARD",
+					"num_workers": "#{num_workers}"
+				},
+				"libraries": [
+					{
+						"pypi": {
+							"package": "pipelinename==#{Octopus.Action.Package.PackageVersion}",
+							"repo": "#{artifactory_url}"
+						}
+					}
+				],
+				"max_retries": 0,
+				"python_wheel_task": {
+					"package_name": "pipelinename==#{Octopus.Action.Package.PackageVersion}",
+					"entry_point": "main_task"
+				}
+			}
+		]
+	}
+}

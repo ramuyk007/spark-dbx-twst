@@ -1,0 +1,74 @@
+[
+  
+  {
+    "_comments": "Rename the content HGZAGTDZ in README.md to Bamboo Project key",
+    "fileName": "/README.md",
+    "changeType": "content",
+    "oldValue": "HGZAGTDZ",
+    "newValue": "{{ BAMBOO_PROJECT_KEY }}"
+  },
+  {
+    "_comments": "Rename the content ICNFLPHA in README.md to Bamboo Plan key",
+    "fileName": "/README.md",
+    "changeType": "content",
+    "oldValue": "ZSGHKFSS",
+    "newValue": "{{ BAMBOO_PLAN_KEY }}"
+  },
+  {
+    "_comments": "Rename the content HGZAGTDZ in setup.py to Bamboo Project key",
+    "fileName": "/src/setup.py",
+    "changeType": "content",
+    "oldValue": "HGZAGTDZ",
+    "newValue": "{{ BAMBOO_PROJECT_KEY }}"
+  },
+  {
+		"_comments": "Rename the offername and pipelinename from all folders in test/**/webapi/service folder",
+		"fileName": "/src/setup.py",
+		"changeType": "content",
+		"oldValue": "pipelinename",
+		"newValue": "{{ namespacePipelineName }}"
+	},
+  {
+    "_comments": "Rename namespace in setup.py",
+    "fileName": "/src/setup.py",
+    "changeType": "content",
+    "oldValue": "John.Doe@Honeywell.com",
+    "newValue": "{{ emailID }}"
+  },
+  {
+    "_comments": "Rename the title name in setup.cake",
+    "fileName": "/setup.cake",
+    "changeType": "content",
+    "oldValue": "offeringname.pipelinename",
+    "newValue": "{{ namespaceOfferingName }}.{{ namespacePipelineName }}"
+  },
+  {
+    "_comments": "Rename the title name in setup.cake",
+    "fileName": "/deploy/application/*.nuspec",
+    "changeType": "file",
+    "oldValue": "offeringname.pipelinename",
+    "newValue": "{{ nuspecId }}"
+  },
+  {
+    "_comments": "Rename the title name in setup.cake",
+    "fileName": "/deploy/application/*.nuspec",
+    "changeType": "content",
+    "oldValue": "offeringname.pipelinename",
+    "newValue": "{{ nuspecId }}"
+  },
+  {
+     "_comments": "Rename namespace in job_properties.json",
+     "fileName": "/deploy/application/content/job_properties.json",
+     "changeType": "content",
+     "oldValue": "pipelinename",
+     "newValue": "{{ namespacePipelineName }}"
+   },
+   {
+     "_comments": "Rename namespace in job_properties.json",
+     "fileName": "/deploy/application/content/job_properties.json",
+     "changeType": "content",
+     "oldValue": "offeringname",
+     "newValue": "{{ namespaceOfferingName }}"
+   }
+
+]
