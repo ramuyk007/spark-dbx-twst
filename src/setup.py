@@ -1,6 +1,6 @@
 import os
 from setuptools import setup, find_packages
-
+from src.version import __VERSION__
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
@@ -26,7 +26,7 @@ setup(
     name='pipelinename',
     # _version.py is created by the build script, if executing this manually either run the build script 
     # or create a _version.py in this folder with the content "__version__='0.0.0'"
-    version=get_version("_version.py"),
+    version=__VERSION__,
     description='pipelinename',
     url='https://bitbucket.honeywell.com/projects/HGZAGTDZ/repos/pipelinename/browse',
     author='John.Doe@Honeywell.com',
