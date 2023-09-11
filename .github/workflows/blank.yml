@@ -61,6 +61,6 @@ jobs:
       - name: commit and push
         run: |
           git commit -am "add"
-          git config --global user.email "ykramu007@gmail.com"
-          git config --global user.name "Ramu Y K"
+          git config user.email "ykramu007@gmail.com"
+          git config user.name "Ramu Y K"
           git push
