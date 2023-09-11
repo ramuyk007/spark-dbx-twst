@@ -65,5 +65,5 @@ jobs:
           git config user.name "ramuyk007"
           git add "dev/hello.yml"
           git commit -m "add"
-          git remote set-url origin https://ramuyk007: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@github.com/ramuyk007/gitopsone
+          git remote set-url origin https://ramuyk007:%40Ra41260014@github.com/ramuyk007/gitopsone
           git push
