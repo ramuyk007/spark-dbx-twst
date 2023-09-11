@@ -45,3 +45,17 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           cat hello.yml
+
+      - name: Checkout seconf repository
+        uses: actions/checkout@v3
+        with:
+            repository: ramuyk007/gitopsone
+
+      - name: copy file hello.yml
+        run: |
+          mv hello.yml gitops/hello/hello.yml
+
+      - name: commit and push
+        run: |
+          git commit -am "add"
+          git push
