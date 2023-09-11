@@ -60,7 +60,7 @@ jobs:
 
       - name: commit and push
         run: |
-          cd gitopsonne
+          cd gitopsone
           git config user.email "ykramu007@gmail.com"
           git config user.name "Ramu Y K"
           git add "dev/hello.yml"
