@@ -45,7 +45,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           cat hello.yml
-          git clone https://github.com/ramuyk007/gitopsone.git
+          git clone https://ramuyk007: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@github.com/ramuyk007/gitopsone.git
 
       # - name: Checkout seconf repository
       #   uses: actions/checkout@v3
