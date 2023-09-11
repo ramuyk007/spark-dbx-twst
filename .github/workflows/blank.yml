@@ -45,8 +45,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           cat hello.yml
-          mkdir gitops
-          cd gitops
           git clone https://github.com/ramuyk007/gitopsone.git
 
       # - name: Checkout seconf repository
@@ -57,9 +55,8 @@ jobs:
       - name: copy file hello.yml
         run: |
           ls
-          ls ./gitops
-          ls gitops/hello
-          mv hello.yml ../gitops/hello/hello.yml
+          ls gitopsone/dev
+          mv hello.yml gitopsone/dev/hello.yml
 
       - name: commit and push
         run: |
