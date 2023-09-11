@@ -62,7 +62,7 @@ jobs:
         run: |
           cd gitopsone
           git config user.email "ykramu007@gmail.com"
-          git config user.name "Ramu Y K"
+          git config user.name "ramuyk007"
           git add "dev/hello.yml"
           git commit -m "add"
           git push
