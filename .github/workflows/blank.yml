@@ -64,7 +64,7 @@ jobs:
           git status
           git config user.email "ykramu007@gmail.com"
           git config user.name "ramuyk007"
-          git remote set-url origin https://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@github.com/ramuyk007/gitopsone.git
+          git remote set-url origin https://ramuyk007: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@github.com/ramuyk007/gitopsone.git
           git add "dev/hello.yml"
           git commit -m "add"
           git status
