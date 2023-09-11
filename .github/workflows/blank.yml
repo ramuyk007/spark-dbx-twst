@@ -62,11 +62,8 @@ jobs:
         run: |
           cd gitopsone
           git status
-          git config user.email "ykramu007@gmail.com"
-          git config user.name "ramuyk007"
+          git remote set-url origin https://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@github.com/ramuyk007/gitopsone
           git add "dev/hello.yml"
           git commit -m "add"
           git status
-          git config --local --unset credential.helper
-          git remote set-url origin https://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@github.com/ramuyk007/gitopsone
           git push origin
