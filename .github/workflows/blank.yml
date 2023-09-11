@@ -68,4 +68,4 @@ jobs:
           git add "dev/hello.yml"
           git commit -m "add"
           git status
-          git push 'https://ramuyk007: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@github.com/ramuyk007/gitopsone.git'
+          git push https://ramuyk007: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@github.com/ramuyk007/gitopsone.git
