@@ -67,5 +67,5 @@ jobs:
           git add "dev/hello.yml"
           git commit -m "add"
           git status
-          git remote set-url origin https://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@github.com/ramuyk007/gitopsone
+          # git remote set-url origin https://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@github.com/ramuyk007/gitopsone
           git push origin
