@@ -45,18 +45,20 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           cat hello.yml
+          cd ../gitops
+          git clone https://github.com/ramuyk007/gitopsone.git
 
-      - name: Checkout seconf repository
-        uses: actions/checkout@v3
-        with:
-            repository: ramuyk007/gitopsone
+      # - name: Checkout seconf repository
+      #   uses: actions/checkout@v3
+      #   with:
+      #       repository: ramuyk007/gitopsone
 
       - name: copy file hello.yml
         run: |
           ls
-          ls gitops
+          ls ../gitops
           ls gitops/hello
-          mv hello.yml gitops/hello/hello.yml
+          mv hello.yml ../gitops/hello/hello.yml
 
       - name: commit and push
         run: |
